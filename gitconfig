@@ -1,0 +1,32 @@
+[alias]
+    l = log --pretty=oneline -n 35 --graph --abbrev-commit
+    aliases = config --get-regexp alias
+    whoami = config user.email
+    contributors = shortlog --summary --numbered
+    tags = tag -l
+    branches = branch --all
+    remotes = remote --verbose
+[color]
+    # Use colors in Git commands that are capable of colored output when
+    # outputting to the terminal. (This is the default setting in Git ≥ 1.8.4.)
+    ui = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow bold
+    remote = green bold
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold # line info
+    old = red # deletions
+    new = green # additions
+[color "status"]
+    added = green bold
+    changed = red bold
+    untracked = cyan bold
+[user]
+    email = danilosilva87@gmail.com
+    name = Danilo Correa
+[core]
+    editor = vim
+[mergetool]
+    prompt = false
