@@ -1,0 +1,27 @@
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'preservim/nerdtree'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plugin 'ryanoasis/vim-devicons'
+Plugin 'Yggdroot/indentLine'
+Plugin 'editorconfig/editorconfig-vim'
+Plugin 'mhartington/oceanic-next'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'kaicataldo/material.vim', { 'branch': 'main' }
+Plugin 'StanAngeloff/php.vim'
+" Terraform
+Plugin 'hashivim/vim-terraform'
+Plugin 'vim-syntastic/syntastic'
+Plugin 'juliosueiras/vim-terraform-completion'
+call vundle#end()
+
+filetype plugin indent on
+
